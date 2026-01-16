@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sports Sense | Soccer</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      font-size: 18px;
+    }
+
+    /* Navbar */
+    nav {
+      background-color: #27ae60;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: white;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 20px;
+    }
+    nav a:hover {
+      color: #f1c40f;
+    }
+
+    /* Hero */
+    header {
+      background: linear-gradient(to right, #2ecc71, #27ae60);
+      color: white;
+      padding: 60px 20px;
+    }
+    .hero-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 1100px;
+      margin: auto;
+      flex-wrap: wrap;
+    }
+    .hero-text {
+      flex: 1;
+      padding-right: 20px;
+    }
+    .hero-text h1 {
+      font-size: 54px;
+      margin-bottom: 10px;
+    }
+    .hero-text p {
+      font-size: 22px;
+      margin-bottom: 30px;
+    }
+    .hero-image {
+      flex: 1;
+      text-align: right;
+    }
+    .hero-image img {
+      max-width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    /* Sections */
+    .section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .section h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 36px;
+      color: #2c3e50;
+    }
+
+    /* Cards */
+    .card {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 20px;
+      margin-bottom: 30px;
+      transition: transform 0.2s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card img {
+      width: 10%;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+    .card h3 {
+      margin-top: 0;
+      color: #27ae60;
+      font-size: 22px;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #27ae60;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      font-size: 16px;
+    }
+
+    /* Small note box */
+    .note {
+      font-size: 16px;
+      color: #555;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <div class="logo">Sports Sense</div>
+    <a href="index.html">Home</a>
+
+  </nav>
+
+<!-- Hero -->
+<header>
+  <div class="hero-container">
+
+    <!-- Hero Text -->
+    <div class="hero-text">
+      <h1>Soccer</h1>
+      <p>Step onto the pitch and learn the essentials of soccer with Sports Sense</p>
+    </div>
+
+    <!-- Hero Video -->
+    <div class="hero-image">
+      <video
+        controls
+        playsinline
+        style="
+          width: 520px;
+          height: 300px;
+          max-width: 100%;
+          border-radius: 12px;
+          box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+          object-fit: cover;
+          display: block;
+          background: #000;
+        "
+      >
+        <source src="soccer-promo.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+  </div>
+</header>
+
+
+
+
+
+  <!-- What is Soccer -->
+  <section class="section">
+    <h2>What is Soccer?</h2>
+    <p>Soccer is a team sport where two teams of eleven players compete to score goals by kicking the ball into the opponent’s net. Players use their feet, head, and body to control the ball, while only the goalkeeper may use hands. Soccer is the world’s most popular sport and builds teamwork, fitness, and coordination.</p>
+  </section>
+
+  <!-- Essential Tips -->
+  <section class="section">
+    <h2>Essential Tips for Beginners</h2>
+
+    <div class="card">
+      <img src="images/soccer-ball.jpg" alt="Soccer Ball">
+      <h3>Tip 1: Learn the Basics</h3>
+      <p>Understand the field layout, basic rules, and player positions. Knowing how the game flows helps you play with confidence.</p>
+    </div>
+
+    <div class="card">
+      <img src="images/soccer-passing.jpg" alt="Soccer Passing">
+      <h3>Tip 2: Practice Passing</h3>
+      <p>Use the inside of your foot for accurate passes. Simple passing drills with a partner improve ball control.</p>
+    </div>
+
+    <div class="card">
+      <img src="images/soccer-dribbling.jpg" alt="Soccer Dribbling">
+      <h3>Tip 3: Work on Dribbling</h3>
+      <p>Keep the ball close to your feet and use small touches. Dribbling practice improves confidence during matches.</p>
+    </div>
+
+    <div class="card">
+      <img src="images/soccer-teamwork.jpg" alt="Soccer Teamwork">
+      <h3>Tip 4: Teamwork Matters</h3>
+      <p>Soccer is a team game. Communicate with teammates, call for the ball, and support each other.</p>
+    </div>
+
+    <div class="card">
+      <h3>Try the Soccer Chatbot</h3>
+      <p class="note">
+        Click the chat button at the bottom-right to ask SportSense about soccer rules, equipment, positions, beginner tips, and safety.
+      </p>
+    </div>
+
+  </section>
+
+<!-- Levels -->
+<section class="section">
+  <h2>Levels of Soccer</h2>
+
+  <div class="card">
+    <img src="images/level-1.jpg" alt="Beginner Soccer">
+    <h3>Beginner Soccer</h3>
+    <p>Focuses on learning basic rules, passing, dribbling, and shooting. Matches are simplified to help new players gain confidence.</p>
+  </div>
+
+  <div class="card">
+    <img src="images/level-2.jpg" alt="Intermediate Soccer">
+    <h3>Intermediate Soccer</h3>
+    <p>Players develop stronger ball control, positioning, and teamwork. Standard match rules are introduced.</p>
+  </div>
+
+  <div class="card">
+    <img src="images/level-3.jpg" alt="Advanced Soccer">
+    <h3>Advanced Soccer</h3>
+    <p>Competitive level with full tactics, formations, and specialized positions. Focus is on speed, strategy, and precision.</p>
+  </div>
+
+</section>
+
+
+  <!-- Why Learn Soccer -->
+<section class="section">
+  <h2>Why Learn Soccer with Sports Sense?</h2>
+  <p style="text-align: center; max-width: 800px; margin: 0 auto;">
+    Sports Sense gives you instant guidance on soccer rules, techniques, and beginner drills. 
+    Whether you want to understand positions or improve basic skills, our AI coach is available 24/7 
+    to make soccer simple and fun.
+  </p>
+</section>
+
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 Sports Sense | Soccer Guide</p>
+  </footer>
+
+  <!-- Flowise Chatbot Embed -->
+  <script type="module">
+    import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
+    Chatbot.init({
+      chatflowid: "d4fc481f-d7a7-4b0a-97a6-05369bc43069",
+      apiHost: "https://cloud.flowiseai.com",
+      theme: {
+        button: {
+          backgroundColor: "#27ae60",
+          right: 20,
+          bottom: 20,
+          size: 48,
+          dragAndDrop: true,
+          iconColor: "white",
+          autoWindowOpen: {
+            autoOpen: false,
+            openDelay: 2,
+            autoOpenOnMobile: false
+          }
+        },
+        tooltip: {
+          showTooltip: true,
+          tooltipMessage: "Need help with soccer? ⚽",
+          tooltipBackgroundColor: "black",
+          tooltipTextColor: "white",
+          tooltipFontSize: 16
+        },
+        disclaimer: {
+          title: "SportSense Disclaimer",
+          message: "This chatbot provides beginner-friendly soccer information only. For official rules or injury concerns, please check with a coach/teacher.",
+          textColor: "black",
+          buttonColor: "#27ae60",
+          buttonText: "Start Chatting",
+          buttonTextColor: "white",
+          blurredBackgroundColor: "rgba(0, 0, 0, 0.4)",
+          backgroundColor: "white"
+        },
+        chatWindow: {
+          showTitle: true,
+          title: "SportSense – Soccer Coach",
+          welcomeMessage: "Hi! Ask me about soccer rules, equipment, positions, beginner tips, or safety.",
+          errorMessage: "Oops — something went wrong. Please try again.",
+          backgroundColor: "#ffffff",
+          height: 650,
+          width: 400,
+          fontSize: 16,
+          starterPrompts: [
+            "What equipment do I need to play soccer?",
+            "Explain the basic rules of soccer",
+            "What are beginner tips for soccer?",
+            "What positions are there in soccer?"
+          ],
+          clearChatOnReload: false,
+          sourceDocsTitle: "Sources:",
+          renderHTML: true,
+          botMessage: {
+            backgroundColor: "#f7f8ff",
+            textColor: "#303235",
+            showAvatar: false
+          },
+          userMessage: {
+            backgroundColor: "#27ae60",
+            textColor: "#ffffff",
+            showAvatar: false
+          },
+          textInput: {
+            placeholder: "Type your soccer question...",
+            backgroundColor: "#ffffff",
+            textColor: "#303235",
+            sendButtonColor: "#27ae60",
+            maxChars: 200,
+            maxCharsWarningMessage: "Please keep your message under 200 characters.",
+            autoFocus: true
+          },
+          footer: {
+            textColor: "#303235",
+            text: "Powered by",
+            company: "SportSense",
+            companyLink: "#"
+          }
+        }
+      }
+    })
+  </script>
+
+</body>
+</html>
